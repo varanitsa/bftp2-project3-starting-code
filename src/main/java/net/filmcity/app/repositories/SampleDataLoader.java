@@ -67,6 +67,12 @@ public class SampleDataLoader {
                             "Tim Burton",
                             2012,
                             "When a boy's beloved dog passes away suddenly, he attempts to bring the animal back to life through a powerful science experiment."
+                            ),
+                    new Movie("Bohemian Rhapsody",
+                            "https://m.media-amazon.com/images/I/61dk4SHy1CL._SY450_.jpg",
+                            " Brian Singer",
+                            2018,
+                            "Biography inspired by the life of Freddie Mercury, from misfit to lead singer of the iconic Queen, and the band's hectic rise to fame."
                             )
 
                     // Añadir aqui todas las pelis del catálogo!!
