@@ -61,7 +61,14 @@ public class SampleDataLoader {
                             "Mimi Leder",
                             2018,
                             "On the Basis of Sex is inspired by the true story of a young Ruth Bader Ginsburg – then a struggling attorney and new mother – who faces adversity and numerous obstacles in her fight for equal rights throughout her career."
+                            ),
+                    new Movie("Frankenweenie",
+                            "https://pics.filmaffinity.com/Frankenweenie-121243257-large.jpg",
+                            "Tim Burton",
+                            2012,
+                            "When a boy's beloved dog passes away suddenly, he attempts to bring the animal back to life through a powerful science experiment."
                             )
+
                     // Añadir aqui todas las pelis del catálogo!!
             );
 
