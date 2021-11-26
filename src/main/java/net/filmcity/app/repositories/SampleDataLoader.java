@@ -61,9 +61,34 @@ public class SampleDataLoader {
                             "Mimi Leder",
                             2018,
                             "On the Basis of Sex is inspired by the true story of a young Ruth Bader Ginsburg – then a struggling attorney and new mother – who faces adversity and numerous obstacles in her fight for equal rights throughout her career."
+<<<<<<< HEAD
                             )
 
             // Añadir aqui todas las pelis del catálogo!!
+=======
+                            ),
+                    new Movie("Frankenweenie",
+                            "https://pics.filmaffinity.com/Frankenweenie-121243257-large.jpg",
+                            "Tim Burton",
+                            2012,
+                            "When a boy's beloved dog passes away suddenly, he attempts to bring the animal back to life through a powerful science experiment."
+                            ),
+                    new Movie("Bohemian Rhapsody",
+                            "https://m.media-amazon.com/images/I/61dk4SHy1CL._SY450_.jpg",
+                            " Brian Singer",
+                            2018,
+                            "Biography inspired by the life of Freddie Mercury, from misfit to lead singer of the iconic Queen, and the band's hectic rise to fame."
+                            ),
+                    new Movie("Wall-E",
+                            "https://pics.filmaffinity.com/walloe-973488527-large.jpg",
+                            "Andrew Stanton",
+                            2008,
+                            "The story follows a robot named WALL-E, who is designed to clean up a waste-covered Earth far in the future. He falls in love with another robot named EVE, who also has a programmed task. "
+                    )
+
+
+                    // Añadir aqui todas las pelis del catálogo!!
+>>>>>>> f438eecdea1f2a27e9bbdea952d5e104cd0f69c8
             );
 
             movieRepository.saveAll(movies);
