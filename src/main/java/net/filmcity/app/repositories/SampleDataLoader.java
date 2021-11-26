@@ -61,8 +61,15 @@ public class SampleDataLoader {
                             "Mimi Leder",
                             2018,
                             "On the Basis of Sex is inspired by the true story of a young Ruth Bader Ginsburg – then a struggling attorney and new mother – who faces adversity and numerous obstacles in her fight for equal rights throughout her career."
-                            )
-                    // Añadir aqui todas las pelis del catálogo!!
+                            ),
+                    new Movie("House of Gucci",
+                             "https://pics.filmaffinity.com/house_of_gucci-713199036-large.jpg",
+                             "Ridley Scott",
+                             2021,
+                             "Está basada en el libro The House of Gucci: A Sensational Story of Murder, Madness, Glamour, and Greed, escrito por Sara Gay Forden, y narra el asesinato de Maurizio Gucci a manos de un sicario contratado por su exesposa, Patrizia Reggiani. "
+            )
+
+            // Añadir aqui todas las pelis del catálogo!!
             );
 
             movieRepository.saveAll(movies);
