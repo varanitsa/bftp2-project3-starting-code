@@ -73,7 +73,14 @@ public class SampleDataLoader {
                             " Brian Singer",
                             2018,
                             "Biography inspired by the life of Freddie Mercury, from misfit to lead singer of the iconic Queen, and the band's hectic rise to fame."
-                            )
+                            ),
+                    new Movie("Wall-E",
+                            "https://pics.filmaffinity.com/walloe-973488527-large.jpg",
+                            "Andrew Stanton",
+                            2008,
+                            "The story follows a robot named WALL-E, who is designed to clean up a waste-covered Earth far in the future. He falls in love with another robot named EVE, who also has a programmed task. "
+                    )
+
 
                     // Añadir aqui todas las pelis del catálogo!!
             );
