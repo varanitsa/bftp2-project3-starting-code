@@ -28,4 +28,10 @@ public class MoviesController {
         return movie;
     }
 
-}
+    @DeleteMapping("/movies/{id}")
+    public Movie deleteMovieById(@PathVariable Long id) {
+        Movie movie = movieRepository.findById(id).orElseThrow(MovieNotFoundException::new);
+        movieRepository.deleteById(id);
+        return movie;
+    }
+    }
