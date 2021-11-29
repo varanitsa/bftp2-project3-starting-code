@@ -13,7 +13,7 @@ public class MoviesController {
     private final MovieRepository movieRepository;
 
     @Autowired
-    MoviesController(MovieRepository movieRepository){
+    MoviesController(MovieRepository movieRepository) {
         this.movieRepository = movieRepository;
     }
 
@@ -22,14 +22,10 @@ public class MoviesController {
         return movieRepository.findAll();
     }
 
-    @GetMapping("/movies/{index}")
-    public Movie findMovie(@PathVariable int index) {
-        return movieRepository.findByIndex(index).orElseThrow(MovieNotFoundException::new);
+    @PostMapping("/movies")
+    public Movie addMovie(@RequestBody Movie movie) {
+        movieRepository.save(movie);
+        return movie;
     }
 
-   /* @PostMapping("/movies")
-    public Movie addPeli(@RequestBody Movie pelicula) {
-        movieRepository.save(pelicula);
-        return pelicula;
-    }*/
 }
