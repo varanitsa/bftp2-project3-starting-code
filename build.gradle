@@ -4,8 +4,8 @@ plugins {
     id 'java'
     id 'jacoco'
 
-
 }
+
 
 group = 'net.filmcity'
 version = '0.0.1-SNAPSHOT'
@@ -32,4 +32,8 @@ jacocoTestReport {
         xml.enabled true
         html.enabled true
     }
+
 }
+
+
+
