@@ -2,19 +2,24 @@ package net.filmcity.app;
 
 import net.filmcity.app.domain.Movie;
 import net.filmcity.app.repositories.MovieRepository;
-import org.junit.jupiter.api.AfterEach;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.ActiveProfiles;
+
 import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.List;
 
+<<<<<<< HEAD
 import static org.hamcrest.Matchers.*;
 import static org.hamcrest.Matchers.is;
+=======
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.*;
+>>>>>>> d88b6052afd01b3bb326e0cd8a12167b36e184fa
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
@@ -76,5 +81,42 @@ class IntegrationTests {
 
         movieRepository.saveAll(movies);
     }
+<<<<<<< HEAD
+=======
+    @Test
+    void allowsToDeleteAMovieById() throws Exception {
+        Movie movie = MovieRepository.save(new Movie("Ratatouille", "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/npHNjldbeTHdKKw28bJKs7lzqzj.jpg","Brad Bird", 2007,
+                "Remy, a resident of Paris, appreciates good food and has quite a sophisticated palate. He would love to become a chef so he can create and enjoy culinary masterpieces to his heart's delight. The only problem is, Remy is a rat.",
+                "Family"));
+
+        mockMvc.perform(delete("/movies/"+ movie.getId()))
+                .andExpect(status().isOk());
+
+
+        List<Movie> movies = MovieRepository.findAll();
+        assertThat(movies, not(contains(allOf(
+                hasProperty("title", is("Ratatouille")),
+                hasProperty("coverImage", is("https://www.themoviedb.org/t/p/w600_and_h900_bestv2/npHNjldbeTHdKKw28bJKs7lzqzj.jpg")),
+                hasProperty("director", is("Brad Bird")),
+                hasProperty("year", is(2007)),
+                hasProperty("synopsis", is("Remy, a resident of Paris, appreciates good food and has quite a sophisticated palate. He would love to become a chef so he can create and enjoy culinary masterpieces to his heart's delight. The only problem is, Remy is a rat.")),
+                hasProperty("genre", is("Family"))
+
+
+        ))));
+
+    }
+
+    @Test
+    void returnsAnErrorIfTryingToDeleteACoderThatDoesNotExist() throws Exception {
+        mockMvc.perform(delete("/movies/1"))
+                .andExpect(status().isNotFound());
+    }
+
+
+
+
+
+>>>>>>> d88b6052afd01b3bb326e0cd8a12167b36e184fa
 }
 
