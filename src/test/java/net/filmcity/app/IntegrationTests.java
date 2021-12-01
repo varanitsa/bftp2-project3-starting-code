@@ -13,8 +13,9 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.List;
 
-import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.hasSize;
+import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.is;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
@@ -28,7 +29,6 @@ class IntegrationTests {
 
     @Autowired
     MovieRepository movieRepository;
-
 
     @BeforeEach
     void setUp() {
@@ -76,5 +76,5 @@ class IntegrationTests {
 
         movieRepository.saveAll(movies);
     }
-
 }
+
