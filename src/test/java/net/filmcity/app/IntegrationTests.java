@@ -12,14 +12,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.List;
-
-<<<<<<< HEAD
 import static org.hamcrest.Matchers.*;
 import static org.hamcrest.Matchers.is;
-=======
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
->>>>>>> d88b6052afd01b3bb326e0cd8a12167b36e184fa
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
@@ -81,8 +77,7 @@ class IntegrationTests {
 
         movieRepository.saveAll(movies);
     }
-<<<<<<< HEAD
-=======
+
     @Test
     void allowsToDeleteAMovieById() throws Exception {
         Movie movie = MovieRepository.save(new Movie("Ratatouille", "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/npHNjldbeTHdKKw28bJKs7lzqzj.jpg","Brad Bird", 2007,
@@ -113,10 +108,5 @@ class IntegrationTests {
                 .andExpect(status().isNotFound());
     }
 
-
-
-
-
->>>>>>> d88b6052afd01b3bb326e0cd8a12167b36e184fa
 }
 
