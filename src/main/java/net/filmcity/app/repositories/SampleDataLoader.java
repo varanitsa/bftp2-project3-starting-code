@@ -47,7 +47,7 @@ public class SampleDataLoader {
                             "Lindsay Lohan stars as Cady Heron, a 16 year old homeschooled girl who not only makes the mistake of falling for Aaron Samuels (Jonathan Bennett), the ex-boyfriend of queenbee Regina George (Rachel McAdams), but also unintentionally joins The Plastics, led by Regina herself.",
                             "Comedia"),
                     new Movie("Lady Bird",
-                            " https://play-lh.googleusercontent.com/qh6m6We5w7325ttmO1qcA0Zmtlm2UG4JUux6VSBsjvxG9azJ6KHdBsobAviSMcTOzTULPQ",
+                            "https://play-lh.googleusercontent.com/cyGZGXw9iZorRlTWe61xBY2WlOaRXWzee1sRFO2akRAfzuck5cBxlECup69koxkRW1N_ ",
                             "Greta Gerwig",
                             2017,
                             "Christine 'Lady Bird' McPherson (Saoirse Ronan) is a senior at a Catholic high school in Sacramento, California in 2002. She longs to attend a prestigious college in 'a city with culture'."
@@ -69,7 +69,7 @@ public class SampleDataLoader {
 
 
                     new Movie("Frankenweenie",
-                            "https://pics.filmaffinity.com/Frankenweenie-121243257-large.jpg",
+                            "https://static.guiainfantil.com/pictures/1242-4-frankenweenie-pelicula-de-tim-burton-para-ninos.jpg",
                             "Tim Burton",
                             2012,
                             "When a boy's beloved dog passes away suddenly, he attempts to bring the animal back to life through a powerful science experiment."
@@ -81,13 +81,13 @@ public class SampleDataLoader {
                             "Biography inspired by the life of Freddie Mercury, from misfit to lead singer of the iconic Queen, and the band's hectic rise to fame."
                             ,"comedia"),
                     new Movie("Wall-E",
-                            "https://pics.filmaffinity.com/walloe-973488527-large.jpg",
+                            "https://es.web.img2.acsta.net/pictures/14/04/30/10/41/026995.jpg",
                             "Andrew Stanton",
                             2008,
                             "The story follows a robot named WALL-E, who is designed to clean up a waste-covered Earth far in the future. He falls in love with another robot named EVE, who also has a programmed task. "
                     ,"Comedia"),
                     new Movie("House of Gucci",
-                            "https://pics.filmaffinity.com/house_of_gucci-713199036-large.jpg",
+                            "https://es.web.img3.acsta.net/pictures/21/11/10/10/42/1405636.jpg",
                             "Ridley Scott",
                             2021,
                             "Está basada en el libro The House of Gucci: A Sensational Story of Murder, Madness, Glamour, and Greed, escrito por Sara Gay Forden, y narra el asesinato de Maurizio Gucci a manos de un sicario contratado por su exesposa, Patrizia Reggiani. ",

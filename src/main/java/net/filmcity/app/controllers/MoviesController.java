@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin
 public class MoviesController {
 
     private final MovieRepository movieRepository;
@@ -39,4 +40,6 @@ public class MoviesController {
     public Movie updateMovieById(@RequestBody Movie movie) {
         movieRepository.findById(movie.getId()).orElseThrow(MovieNotFoundException::new);
         return movieRepository.save(movie);}
+
 }
+
