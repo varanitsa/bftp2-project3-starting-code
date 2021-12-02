@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Bftp2Project3TemplateApplication {
 
     public static void main(String[] args) {
+
         SpringApplication.run(Bftp2Project3TemplateApplication.class, args);
     }
 
